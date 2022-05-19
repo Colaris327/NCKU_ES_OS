@@ -12,7 +12,7 @@ void *Producer(void *args)
 {
     while (x < 200)
     {
-        sleep(0.5);
+        usleep(1);
         if (count < 10)
         {
             buffer[count] = x;
@@ -28,7 +28,7 @@ void *Consumer(void *args)
     while (x < 200)
     {
         int y;
-        sleep(0.5);
+        usleep(1);
         if (count > 0)
         {
             y = buffer[count - 1];
