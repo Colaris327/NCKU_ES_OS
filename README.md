@@ -1,3 +1,4 @@
 OS作業
 
-在LINUX環境下用multithreading解決Producer consumer problem
+在LINUX環境下解決Producer consumer problem
+multithreading
