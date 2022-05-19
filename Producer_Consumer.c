@@ -14,7 +14,7 @@ void *Producer(void *args)
 {
     while (x < 200)
     {
-        sleep(0.5);
+        usleep(1);
         pthread_mutex_lock(&mutexbuffer);
         if (count < 10)
         {
@@ -31,7 +31,7 @@ void *Consumer(void *args)
 {
     while (x <= 200)
     {
-        sleep(0.5);
+        usleep(1);
         pthread_mutex_lock(&mutexbuffer);
         int y;
         if (count > 0)
